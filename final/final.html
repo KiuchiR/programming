@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>奪い去られたお菓子を求めて</title>
+    <link rel="stylesheet" href="rogue_like_like.css" media="all">
+</head>
+
+<body>
+
+    <div id="container">
+      <h1 id="depth">dlvl1</h1>
+   <div>
+      <b>画面表示物</b>
+      <ol>
+        <li>灰色:未探索地帯(探索可能)</li>
+        <li>黒:未探索地帯(探索不可)</li>
+        <li>白:空地</li>
+        <li>赤:階段</li>
+        <li><input type = "button" value = "階段を上がる" onclick="goUp();" class = "goup" ></li>
+      </ol>
+      <div id="enemy" style="float: right">
+        <ul id = eName></ul>
+         <div id="eHP"></div>
+           <div id=fightButton></div>
+      </div>
+      <div id="things" style="float: left">
+      　<b>装備品</b>
+      　  <ul id=weapons><li>未実装</li></ul>
+        <b>ポーション</b>
+         <ul id=potions></ul>
+     　 <b>道具</b>
+         <ul id=tools name = tools><li>未実装</li></ul>
+あなた
+        <ul>
+          <li>lvl:<div id = "lvl"></div></li>
+          <li>HP:<div id="HP"></div></li>
+          <li>攻:<div id="att"></div></li>
+          <li>防:<div id="dif"></div></li>
+          <li>速:<div id="spe"></div></li>
+          <li>exp:<div id="exp"></div></li>
+        </ul>
+
+        </div>
+      </div>
+      <table id="field"></table>
+    </div>
+
+
+
+  <script src="rogue_like_like.js"></script>
+
+
+</body>
+
+</html>
